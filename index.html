@@ -1,108 +1,98 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Ahmad T. Alflahat - Bio</title>
-  <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@400;600;700&display=swap" rel="stylesheet">
-  <style>
-    body {
-      font-family: 'Raleway', sans-serif;
-      margin: 0;
-      background: #fafafa;
-      color: #333;
-    }
-    header {
-      padding: 1rem 2rem;
-      background: #fff;
-      border-bottom: 1px solid #ccc;
-      display: flex;
-      justify-content: space-between;
-      align-items: center;
-    }
-    nav a {
-      margin: 0 1rem;
-      text-decoration: none;
-      color: #444;
-      font-weight: 600;
-    }
-    .container {
-      display: flex;
-      padding: 2rem;
-      max-width: 1200px;
-      margin: auto;
-    }
-    .sidebar {
-      flex: 1;
-      max-width: 300px;
-      padding-right: 2rem;
-    }
-    .sidebar img {
-      border-radius: 50%;
-      width: 100%;
-      max-width: 180px;
-    }
-    .main {
-      flex: 3;
-    }
-    h1, h2, h3 {
-      color: #444;
-    }
-    .highlight {
-      color: #c20000;
-      font-weight: bold;
-    }
-    ul.social-links {
-      list-style: none;
-      padding: 0;
-    }
-    ul.social-links li {
-      margin: 0.5rem 0;
-    }
-    ul.social-links li a {
-      color: #007acc;
-      text-decoration: none;
-    }
-  </style>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Ahmad Alflahat - Bio</title>
+    <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="icon" href="images/favicon.ico" type="image/x-icon">
 </head>
+
 <body>
-  <header>
-    <div><strong>Ahmad T. Alflahat</strong></div>
-    <nav>
-      <a href="#cv">cv</a>
-      <a href="#publications">publications</a>
-      <a href="#talks">talks</a>
-      <a href="#teaching">teaching</a>
-      <a href="#contact">contact</a>
-    </nav>
-  </header>
+    <header>
+        <div style="position: relative;left: 25%;font-size: 24px;">
+            <strong>
+                <a href="index.html" style="text-decoration: none; color: inherit;">
+                    Ahmad Alflahat
+                </a>
+            </strong>
+        </div>
+        <nav>
+            <a href="cv.html">CV</a>
+            <a href="#about">About</a>
+            <a href="#research">Research</a>
+            <a href="#background">Background</a>
+            <a href="#contact">Contact</a>
+        </nav>
+    </header>
 
-  <div class="container">
-    <aside class="sidebar">
-      <img src="/path-to-your-profile-image.jpg" alt="Ahmad's Photo">
-      <p><strong>Ahmad T. Alflahat</strong><br/>he/him<br/>AI engineer. researcher. coder.</p>
-      <ul class="social-links">
-        <li><a href="#">📍 Jordan</a></li>
-        <li><a href="#">GitHub</a></li>
-        <li><a href="#">LinkedIn</a></li>
-        <li><a href="#">Google Scholar</a></li>
-      </ul>
-    </aside>
+    <div class="container">
+        <aside class="sidebar">
+            <img src="images/me.jpg" alt="Ahmad's Photo">
+            <p><strong>Ahmad Alflahat</strong>
+            <p>AI Engineer | Data Scientist | Researcher</p>
+            </p>
+            <ul class="social-links">
+                <li><i class="fas fa-map-marker-alt"></i> Amman, Jordan</li>
+                <li><i class="fab fa-github"></i><a href="https://github.com/ahmadtariqf" target="_blank"
+                        rel="noopener noreferrer"> GitHub</a></li>
+                <li><i class="fab fa-linkedin"></i><a href="https://linkedin.com/in/ahmad-alflahat" target="_blank"
+                        rel="noopener noreferrer"> LinkedIn</a></li>
+                <li><i class="fas fa-graduation-cap"></i><a
+                        href="https://scholar.google.com/citations?user=SmeXs_cAAAAJ&hl=en" target="_blank"
+                        rel="noopener noreferrer"> Google Scholar</a></li>
+                <li><i class="fab fa-orcid"></i><a href="https://orcid.org/0000-0001-5852-346X" target="_blank"
+                        rel="noopener noreferrer"> ORCID</a></li>
+            </ul>
+        </aside>
 
-    <main class="main">
-      <h2>Biography</h2>
-      <p>I am an AI researcher and data scientist with experience in machine learning, symbolic AI, and medical imaging. I recently completed my MSc in Data Science and have published in the fields of AI-driven segmentation, IoT data, and rough set theory. I enjoy developing models that not only work—but can be trusted.</p>
+        <main class="main">
+            <h2 id="about">Biography</h2>
+            <p>I am a data scientist and AI engineer with a strong research background in symbolic AI, machine learning,
+                and medical imaging. My goal is to build intelligent systems that are trustworthy, explainable, and
+                beneficial to society.</p>
 
-      <h2>My Research</h2>
-      <p>I specialize in symbolic AI, logic-based reasoning, and real-world machine learning applications. My recent work focuses on interpretability, robustness, and reasoning under uncertainty. I aim to create AI systems that deserve our trust by combining logic and statistics in meaningful ways.</p>
+            <h2 id="research">Research Interests</h2>
+            <p>I am passionate about creating transparent and interpretable AI systems that combine symbolic reasoning
+                with statistical learning. My work includes:</p>
+            <ul>
+                <li>Applying rough set theory for discretization and feature selection in complex datasets</li>
+                <li>Designing deep learning architectures for medical image segmentation, including 2D/3D MRI brain
+                    scans</li>
+                <li>Developing symbolic models for reasoning under uncertainty using logic-based frameworks</li>
+                <li>Building AI-powered platforms to support social welfare, using real-world data from government
+                    institutions</li>
+                <li>Exploring ethical AI applications that enhance transparency and trust in automated decision-making
+                </li>
+            </ul>
+            <p>I believe in bridging the gap between theoretical AI research and practical societal impact.</p>
 
-      <h2>My Background</h2>
-      <p>I earned my MSc in Data Science from Princess Sumaya University for Technology and my BSc in Software Engineering from Al-Hussein Bin Talal University, where I graduated first in my class. I currently work at the National Aid Fund, building intelligent data systems to support social welfare programs.</p>
+            <h2 id="background">Background</h2>
+            <p>I hold a Master’s degree in Data Science from Princess Sumaya University for Technology and a Bachelor’s
+                in Software Engineering from Al-Hussein Bin Talal University, where I graduated first in my class. I
+                currently work at the National Aid Fund in Jordan as a researcher and data engineer, developing and
+                maintaining intelligent social protection data systems.</p>
 
-      <h2 id="contact">Want to work with me?</h2>
-      <p>I am actively applying to PhD positions in AI, especially those involving logic, reasoning, and learning. I’m open to collaboration, research exchange, and supervised PhD roles in Europe and beyond.</p>
-      <p class="highlight">Let’s connect and build something meaningful!</p>
-    </main>
-  </div>
+            <h2 id="contact">Looking Ahead</h2>
+            <p>I am actively seeking a PhD position where I can contribute to advancing symbolic AI, logical reasoning,
+                and real-world applications of machine learning. I'm especially interested in projects that bridge
+                theory and impact.</p>
+            <p class="highlight">“Always curious, always building.”
+            <p class="highlight">Let’s connect and collaborate!</p>
+
+            </p>
+            <h2>Contact</h2>
+            <p><strong><i class="fas fa-at"></i></strong> <a
+                    href="mailto:ahmadtariqf@gmail.com">ahmadtariqf@gmail.com</a></p>
+
+        </main>
+    </div>
+    <footer>
+        <p>© 2025 Ahmad Alflahat. All rights reserved.</p>
+    </footer>
 </body>
+
 </html>

@@ -1,0 +1,169 @@
+body {
+  font-family: 'Raleway', sans-serif;
+  margin: 0;
+  background: #f3f3f3;
+  color: #222;
+}
+
+/* NAVIGATION (Fixed & Styled) */
+header {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  background: #ffffff;
+  border-bottom: 1px solid #ddd;
+  padding: 1rem 2rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  z-index: 1000;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.05);
+}
+nav {
+    margin-right: 20%;
+}
+nav a {
+  margin: 0 1rem;
+  text-decoration: none;
+  color: #007acc;
+  font-weight: 600;
+  position: relative;
+}
+
+nav a:hover::after {
+  content: '';
+  position: absolute;
+  width: 100%;
+  height: 2px;
+  background-color: #007acc;
+  left: 0;
+  bottom: -4px;
+}
+
+.container {
+  display: block;
+  padding: 6rem 2rem 2rem;
+  max-width: 1200px;
+  margin: auto;
+}
+
+/* Fix Sidebar */
+.sidebar {
+  position: fixed;
+  top: 6rem; /* leaves space for fixed header */
+  left: 25rem;
+  width: 260px;
+  max-width: 260px;
+  padding-right: 1rem;
+}
+
+
+
+.sidebar img {
+  border-radius: 50%;
+  width: 100%;
+  max-width: 180px;
+  margin-bottom: 1rem;
+}
+
+.main {
+  margin-left: 300px; /* adjust based on sidebar width */
+  flex: 1;
+}
+
+h1, h2, h3 {
+  color: #2c2c2c;
+}
+
+.highlight {
+  color: #c20000;
+  font-weight: bold;
+}
+
+ul.social-links {
+  list-style: none;
+  padding: 0;
+}
+
+ul.social-links li {
+  margin: 0.5rem 0;
+  display: flex;
+  align-items: center;
+  font-size: 13px;
+}
+
+ul.social-links li i {
+  margin-right: 10px;
+  color: #007acc;
+  min-width: 20px;
+}
+
+ul.social-links li a {
+  color: #007acc;
+  text-decoration: none;
+}
+
+ul {
+  padding-left: 1.2rem;
+}
+
+ul li {
+  margin-bottom: 0.5rem;
+}
+
+footer {
+  text-align: center;
+  font-size: 0.9rem;
+  padding: 1.5rem;
+  background-color: #fafafa;
+  color: #555;
+  border-top: 1px solid #eee;
+  margin-top: 2rem;
+}
+
+
+.cv-container {
+  max-width: 1200px;
+  margin: 6rem auto 3rem;
+  padding: 0 2rem;
+  font-family: 'Raleway', sans-serif;
+  line-height: 1.7;
+}
+
+.cv-container h1 {
+  font-size: 2rem;
+  color: #2c2c2c;
+}
+
+.cv-container h2 {
+  margin-top: 2rem;
+  color: #444;
+  font-size: 1.4rem;
+  border-bottom: 1px solid #ddd;
+  padding-bottom: 0.3rem;
+}
+
+.cv-container ul {
+  padding-left: 1.5rem;
+}
+
+.cv-container a {
+  color: #007acc;
+  text-decoration: none;
+}
+
+.cv-container a:hover {
+  text-decoration: underline;
+}
+
+.cv-container h2 {
+  margin-top: 2rem;
+  font-size: 1.4rem;
+  color: #333;
+  border-bottom: 2px solid #ddd;
+  padding-bottom: 0.4rem;
+}
+
+.cv-container ul li {
+  margin-bottom: 0.6rem;
+}
