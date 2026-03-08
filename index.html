@@ -36,6 +36,9 @@
             <p>AI Engineer | Data Scientist | Researcher</p>
             </p>
             <ul class="social-links">
+                <li><i class="fas fa-map-marker-alt"></i> <img src="https://komarev.com/ghpvc/?username=ahmadtariqf&color=blue" alt="Visitor Count"></li>
+
+                
                 <li><i class="fas fa-map-marker-alt"></i> Amman, Jordan</li>
                 <li><i class="fab fa-github"></i><a href="https://github.com/ahmadtariqf" target="_blank"
                         rel="noopener noreferrer"> GitHub</a></li>
@@ -92,9 +95,21 @@
     </div>
     <footer>
         <p>© 2025 Ahmad Alflahat. All rights reserved.</p>
-        <img src="https://komarev.com/ghpvc/?username=ahmadtariqf&color=blue" alt="Visitor Count">
+        
+        <p>Total Visits: <span id="visit-count">...</span></p>
+            
+            <script>
+              async function updateCounter() {
+                // Replace 'ahmad-resume' with a unique name for your project
+                const response = await fetch('https://api.counterapi.dev/v2/atf-98s-team-3195/ahmadtariqf');
+                const data = await response.json();
+                document.getElementById('visit-count').innerText = data.value;
+              }
+              updateCounter();
+            </script>
     </footer>
 </body>
 
 
 </html>
+
